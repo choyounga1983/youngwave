@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Young Wave Creative — Europe & SEA Influencer-Commerce Full-Stack Company</title>
+<meta name="description" content="셀럽 + 인플루언서 풀로 브랜드의 동남아·유럽 진출을 런칭부터 스케일까지 — 현지 진입·인증·브랜딩·유통·판매까지 원스톱.">
+<link rel="icon" href="assets/youngwave-logo.png">
+<!-- Open Graph / 링크 미리보기 (영웨이브 로고) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Young Wave Creative">
+<meta property="og:title" content="Young Wave Creative — 유럽·동남아 인플루언서 커머스 풀스택 컴퍼니">
+<meta property="og:description" content="셀럽과 인플루언서 풀로 브랜드의 동남아·유럽 매출을 만듭니다. 흩어져 있던 해외 판매 전 과정을 하나의 파이프라인으로.">
+<meta property="og:url" content="https://brooksserviceskim.github.io/youngwave/">
+<meta property="og:image" content="https://brooksserviceskim.github.io/youngwave/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Young Wave Creative — 유럽·동남아 인플루언서 커머스 풀스택 컴퍼니">
+<meta name="twitter:description" content="셀럽과 인플루언서 풀로 브랜드의 동남아·유럽 매출을 만듭니다.">
+<meta name="twitter:image" content="https://brooksserviceskim.github.io/youngwave/assets/og-image.jpg">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<div class="bg-aura"></div>
+<header class="nav"></header>
+
+<!-- HERO -->
+<section class="hero wrap">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow"><span class="dot"></span><span data-i18n="hero.fs"></span></span>
+      <h1 class="display"><span data-i18n="hero.title1"></span> <em data-i18n="hero.title2"></em></h1>
+      <p class="lead" data-i18n="hero.lead"></p>
+      <div class="hero-cta">
+        <a class="btn btn-y" href="influencers.html" data-i18n="cta.explore"></a>
+        <a class="btn btn-ghost" href="contact.html" data-i18n="cta.brand"></a>
+      </div>
+    </div>
+    <div>
+      <div class="hero-video" id="heroVideo"></div>
+      <div class="hero-dots" id="heroDots"></div>
+    </div>
+  </div>
+  <!-- WAVE ANIMATION -->
+  <div class="ocean" aria-hidden="true">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs><path id="ywave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/></defs>
+      <g class="wparallax">
+        <use href="#ywave" x="48" y="0" fill="rgba(31,224,218,0.55)"/>
+        <use href="#ywave" x="48" y="3" fill="rgba(123,92,255,0.40)"/>
+        <use href="#ywave" x="48" y="5" fill="rgba(46,107,255,0.28)"/>
+        <use href="#ywave" x="48" y="7" fill="rgba(255,212,0,0.16)"/>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker"><div class="ticker-track">
+  <span data-i18n="marquee"></span><span data-i18n="marquee"></span>
+</div></div>
+
+<!-- ① ONE-STOP PIPELINE (7-step, matches CEO infographic) -->
+<section class="sec wrap">
+  <div class="sec-head reveal" style="max-width:880px"><div class="kicker" data-i18n="sys.kicker"></div>
+    <h2 data-i18n="sys.title"></h2></div>
+  <div class="sys-points reveal">
+    <span><b>🌐</b><span data-i18n="sys.p1"></span></span>
+    <span><b>🎯</b><span data-i18n="sys.p2"></span></span>
+    <span><b>📈</b><span data-i18n="sys.p3"></span></span>
+  </div>
+  <div class="pipe" id="flowGrid"></div>
+  <div class="pipe-band reveal">
+    <span class="pb-ico">🔗</span>
+    <span class="pb-txt" data-i18n="sys.band"></span>
+    <span class="pb-arrow">→</span>
+  </div>
+</section>
+
+<!-- ② INFLUENCER POOL (핵심 엔진) -->
+<section class="sec wrap">
+  <div class="sec-head reveal"><div class="kicker" data-i18n="home.infl.title"></div>
+    <h2 data-i18n="home.infl.sub"></h2></div>
+  <div class="infl-grid" id="inflGrid" data-limit="10"></div>
+  <div class="center" style="margin-top:34px"><a class="btn btn-y" href="influencers.html" data-i18n="cta.explore"></a></div>
+</section>
+
+<!-- STATS -->
+<section class="sec wrap">
+  <div class="stats">
+    <div class="stat reveal"><div class="num">40M<em>+</em></div><div class="lbl" data-i18n="stat.reach"></div></div>
+    <div class="stat reveal"><div class="num">16</div><div class="lbl" data-i18n="net.count"></div></div>
+    <div class="stat reveal"><div class="num">100<em>+</em></div><div class="lbl" data-i18n="stat.deals"></div></div>
+    <div class="stat reveal"><div class="num">50<em>+</em></div><div class="lbl" data-i18n="stat.brands"></div></div>
+  </div>
+</section>
+
+<!-- ③ OUR CONTENT (원소스 멀티유즈 증명) -->
+<section class="sec wrap">
+  <div class="sec-head reveal"><div class="kicker">OUR CONTENT</div>
+    <h2 data-i18n="content.title"></h2><p data-i18n="content.sub"></p></div>
+  <div class="reel" id="reelGrid"></div>
+</section>
+
+<!-- KEY PROJECTS (실적) -->
+<section class="sec wrap">
+  <div class="sec-head reveal"><div class="kicker" data-i18n="proj.title"></div>
+    <h2 data-i18n="proj.title"></h2><p data-i18n="proj.sub"></p></div>
+  <div class="proj-grid" id="projGrid"></div>
+</section>
+
+<!-- PROJECT HISTORY (auto-scroll gallery) -->
+<section class="sec" id="history">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="kicker" data-i18n="hist.kicker"></div>
+      <h2 data-i18n="hist.title"></h2><p data-i18n="hist.sub"></p></div>
+  </div>
+  <div class="hist-marquee" id="histMarquee" aria-label="Project history"></div>
+</section>
+
+<!-- PRODUCTION & EVENTS (프로그램·행사·콘텐츠 제작 역량) -->
+<section class="sec wrap" id="studio">
+  <div class="sec-head reveal"><div class="kicker" data-i18n="studio.kicker"></div>
+    <h2 data-i18n="studio.title"></h2><p data-i18n="studio.sub"></p></div>
+
+  <div class="flow3">
+    <div class="flow3-step reveal"><span class="f3-no">01</span>
+      <h3 data-i18n="studio.f1t"></h3><p data-i18n="studio.f1d"></p></div>
+    <span class="flow3-arr reveal">→</span>
+    <div class="flow3-step reveal"><span class="f3-no">02</span>
+      <h3 data-i18n="studio.f2t"></h3><p data-i18n="studio.f2d"></p></div>
+    <span class="flow3-arr reveal">→</span>
+    <div class="flow3-step reveal"><span class="f3-no">03</span>
+      <h3 data-i18n="studio.f3t"></h3><p data-i18n="studio.f3d"></p></div>
+  </div>
+
+  <div class="grid-3" style="margin-top:30px">
+    <div class="card reveal"><div class="ico">🎬</div><h3 data-i18n="studio.c1t"></h3><p data-i18n="studio.c1d"></p></div>
+    <div class="card reveal"><div class="ico">🎤</div><h3 data-i18n="studio.c2t"></h3><p data-i18n="studio.c2d"></p></div>
+    <div class="card reveal"><div class="ico">👗</div><h3 data-i18n="studio.c3t"></h3><p data-i18n="studio.c3d"></p></div>
+    <div class="card reveal"><div class="ico">📺</div><h3 data-i18n="studio.c4t"></h3><p data-i18n="studio.c4d"></p></div>
+    <div class="card reveal"><div class="ico">🛒</div><h3 data-i18n="studio.c5t"></h3><p data-i18n="studio.c5d"></p></div>
+    <div class="card reveal"><div class="ico">📣</div><h3 data-i18n="studio.c6t"></h3><p data-i18n="studio.c6d"></p></div>
+  </div>
+</section>
+
+<!-- NETWORK (아시아 커버리지) -->
+<section class="sec netwrap"><div class="wrap">
+  <div class="sec-head reveal"><div class="kicker" data-i18n="hero.kicker"></div>
+    <h2 data-i18n="net.title"></h2><p data-i18n="net.sub"></p></div>
+  <div class="net-num reveal">16 <span style="font-size:.34em;color:#fff;font-weight:700" data-i18n="net.count"></span></div>
+  <div class="flag-grid" id="flagGrid"></div>
+</div></section>
+
+<!-- CAPABILITIES (서비스 상세) -->
+<section class="sec wrap">
+  <div class="sec-head reveal"><div class="kicker" data-i18n="home.svc.title"></div>
+    <h2 data-i18n="home.svc.sub"></h2></div>
+  <div class="grid-3">
+    <div class="card reveal"><div class="ico">📡</div><h3 data-i18n="svc.a.t"></h3><p data-i18n="svc.a.d"></p></div>
+    <div class="card reveal"><div class="ico">🛒</div><h3 data-i18n="svc.b.t"></h3><p data-i18n="svc.b.d"></p></div>
+    <div class="card reveal"><div class="ico">🏬</div><h3 data-i18n="svc.c.t"></h3><p data-i18n="svc.c.d"></p></div>
+    <div class="card reveal"><div class="ico">🎬</div><h3 data-i18n="svc.d.t"></h3><p data-i18n="svc.d.d"></p></div>
+    <div class="card reveal"><div class="ico">✅</div><h3 data-i18n="svc.e.t"></h3><p data-i18n="svc.e.d"></p></div>
+    <div class="card reveal"><div class="ico">🤝</div><h3 data-i18n="svc.f.t"></h3><p data-i18n="svc.f.d"></p></div>
+  </div>
+  <div class="center" style="margin-top:30px"><a class="btn btn-ghost" href="services.html" data-i18n="nav.services"></a></div>
+</section>
+
+<!-- PARTNERS (관계사 인프라) -->
+<section class="sec wrap" id="partners">
+  <div class="sec-head reveal"><div class="kicker" data-i18n="home.partner.title"></div>
+    <h2 data-i18n="home.partner.sub"></h2></div>
+
+  <!-- FEATURED: 국가급 파트너십 (주한 베트남 국가관광청 대표부 · KOVECA) -->
+  <div class="gov-band reveal" style="margin-top:30px">
+    <div class="gov-head">
+      <div class="kicker" data-i18n="studio.gov.kicker"></div>
+      <h3 data-i18n="studio.gov.title"></h3>
+      <p data-i18n="studio.gov.lead"></p>
+    </div>
+    <div class="gov-duo">
+      <div class="gov-card">
+        <div class="gov-logo"><img src="assets/gov/vnat_logo.png" alt="Vietnam National Administration of Tourism — Korea Office"></div>
+        <div class="gov-body"><h4 data-i18n="studio.gov.o1t"></h4><p data-i18n="studio.gov.o1d"></p></div>
+      </div>
+      <div class="gov-card">
+        <div class="gov-logo"><img src="assets/gov/koveca_logo.png" alt="KOVECA — Korea-Vietnam Economic Cultural Association"></div>
+        <div class="gov-body"><h4 data-i18n="studio.gov.o2t"></h4><p data-i18n="studio.gov.o2d"></p></div>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="partner-subhead reveal" data-i18n="partners.morehead"></h3>
+  <div class="partner-grid">
+    <div class="partner-card reveal">
+      <div class="plogo"><img src="assets/partners/metub.png" alt="METUB Network"></div>
+      <h3>METUB Network</h3><p data-i18n="partners.metub"></p>
+    </div>
+    <div class="partner-card reveal">
+      <div class="plogo"><img src="assets/partners/uni.png" alt="UNI Corp · Miss Universe Vietnam"></div>
+      <h3>UNI Corp</h3><p data-i18n="partners.uni"></p>
+    </div>
+    <div class="partner-card reveal">
+      <div class="plogo"><img src="assets/partners/choo.png" alt="Choo Communications"></div>
+      <h3>Choo Communications</h3><p data-i18n="partners.choo"></p>
+    </div>
+    <div class="partner-card reveal">
+      <div class="plogo plogo-text">ZORBA</div>
+      <h3>ZORBA Production</h3><p data-i18n="partners.zorba"></p>
+    </div>
+  </div>
+
+  <h3 class="partner-subhead reveal" data-i18n="partners.collabhead"></h3>
+  <div class="partner-grid">
+    <div class="partner-card reveal">
+      <div class="plogo plogo-selects">The Selects</div>
+      <h3>The Selects · Paris</h3><p data-i18n="partners.selects"></p>
+    </div>
+    <div class="partner-card reveal">
+      <div class="plogo"><img src="assets/partners/pavillon-royal.jpg" alt="Pavillon Royal Paris"></div>
+      <h3>Pavillon Royal · Cannes</h3><p data-i18n="partners.cannes"></p>
+    </div>
+    <div class="partner-card reveal">
+      <div class="plogo plogo-dark"><img src="assets/partners/konnecthai.jpg" alt="KonnecThai"></div>
+      <h3>KonnecThai · 2023</h3><p data-i18n="partners.konnecthai"></p>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS (신뢰) -->
+<section class="sec netwrap"><div class="wrap">
+  <div class="sec-head reveal"><div class="kicker" data-i18n="clients.title"></div>
+    <h2 data-i18n="clients.title"></h2><p data-i18n="clients.sub"></p></div>
+  <div class="cl-wrap" id="clientsBox"></div>
+</div></section>
+
+<!-- WHY (차별점: 인증·물류) -->
+<section class="sec wrap">
+  <div class="sec-head reveal"><div class="kicker" data-i18n="why.title"></div>
+    <h2 data-i18n="why.title"></h2><p data-i18n="why.sub"></p></div>
+  <div class="why-grid" id="whyGrid"></div>
+</section>
+
+<!-- ④ PARTNERSHIP PROPOSAL (그래서 함께) -->
+<section class="sec wrap">
+  <div class="sec-head reveal"><div class="kicker" data-i18n="prop.kicker"></div>
+    <h2 data-i18n="prop.title"></h2><p data-i18n="prop.sub"></p></div>
+  <div class="prop-grid">
+    <div class="prop-card reveal">
+      <h3 data-i18n="prop.brands"></h3>
+      <div class="prop-pills" id="propBrands"></div>
+    </div>
+    <div class="prop-arrow reveal">→</div>
+    <div class="prop-card prop-offer reveal">
+      <h3 data-i18n="prop.offer"></h3>
+      <ul id="propOffer"></ul>
+    </div>
+  </div>
+  <div class="center" style="margin-top:30px"><a class="btn btn-y" href="contact.html" data-i18n="prop.cta"></a></div>
+</section>
+
+<!-- CTA -->
+<section class="sec">
+  <div class="cta-band reveal">
+    <h2 data-i18n="cta.title"></h2><p data-i18n="cta.sub"></p>
+    <a class="btn" href="contact.html" data-i18n="cta.btn"></a>
+  </div>
+</section>
+
+<footer></footer>
+<script src="js/data.js"></script>
+<script src="js/media.js"></script>
+<script src="js/history-data.js"></script>
+<script src="js/app.js"></script>
+</body></html>
