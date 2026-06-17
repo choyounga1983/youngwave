@@ -134,7 +134,7 @@ const INFLUENCERS = [
 /* ---------- UI translations ---------- */
 const I18N = {
   ko:{
-    "nav.home":"홈","nav.influencers":"인플루언서","nav.services":"서비스","nav.about":"회사소개","nav.contact":"문의하기",
+    "nav.home":"홈","nav.influencers":"인플루언서","nav.services":"서비스","nav.studio":"제작·행사","nav.history":"프로젝트 히스토리","nav.about":"회사소개","nav.contact":"문의하기",
     "cta.brand":"브랜드 제휴 문의","cta.explore":"인플루언서 풀 보기",
     "hero.badge":"한국 × 동남아 인플루언서 마케팅",
     "hero.title1":"유럽·동남아 특화 인플루언서 커머스","hero.title2":"풀스택 컴퍼니",
@@ -176,7 +176,7 @@ const I18N = {
     "foot.tag":"한국과 동남아·유럽을 잇는 인플루언서 커머스 풀스택 파트너.","foot.menu":"메뉴","foot.contact":"연락처","foot.partner":"한국 지사 파트너","foot.rights":"All rights reserved."
   },
   en:{
-    "nav.home":"Home","nav.influencers":"Influencers","nav.services":"Services","nav.about":"About","nav.contact":"Contact",
+    "nav.home":"Home","nav.influencers":"Influencers","nav.services":"Services","nav.studio":"Production","nav.history":"Project History","nav.about":"About","nav.contact":"Contact",
     "cta.brand":"Brand Inquiry","cta.explore":"Explore the Pool",
     "hero.badge":"Korea × Southeast Asia Influencer Marketing",
     "hero.title1":"Europe & SEA Influencer-Commerce","hero.title2":"Full-Stack Company",
@@ -217,7 +217,7 @@ const I18N = {
     "foot.tag":"Your influencer-commerce full-stack partner linking Korea, Southeast Asia & Europe.","foot.menu":"Menu","foot.contact":"Contact","foot.partner":"Korea Branch Partner","foot.rights":"All rights reserved."
   },
   vi:{
-    "nav.home":"Trang chủ","nav.influencers":"Influencer","nav.services":"Dịch vụ","nav.about":"Giới thiệu","nav.contact":"Liên hệ",
+    "nav.home":"Trang chủ","nav.influencers":"Influencer","nav.services":"Dịch vụ","nav.studio":"Sản xuất","nav.history":"Lịch sử dự án","nav.about":"Giới thiệu","nav.contact":"Liên hệ",
     "cta.brand":"Hợp tác thương hiệu","cta.explore":"Xem danh sách",
     "hero.badge":"Marketing Influencer Hàn Quốc × Đông Nam Á",
     "hero.title1":"Influencer-Commerce Âu · Đông Nam Á","hero.title2":"Công ty Full-Stack",
@@ -258,7 +258,7 @@ const I18N = {
     "foot.tag":"Đối tác influencer-commerce kết nối Hàn Quốc, Đông Nam Á & châu Âu.","foot.menu":"Menu","foot.contact":"Liên hệ","foot.partner":"Đối tác chi nhánh Hàn","foot.rights":"Bảo lưu mọi quyền."
   },
   th:{
-    "nav.home":"หน้าแรก","nav.influencers":"อินฟลูเอนเซอร์","nav.services":"บริการ","nav.about":"เกี่ยวกับเรา","nav.contact":"ติดต่อ",
+    "nav.home":"หน้าแรก","nav.influencers":"อินฟลูเอนเซอร์","nav.services":"บริการ","nav.studio":"การผลิต","nav.history":"ประวัติโปรเจกต์","nav.about":"เกี่ยวกับเรา","nav.contact":"ติดต่อ",
     "cta.brand":"ติดต่อแบรนด์","cta.explore":"ดูรายชื่อ",
     "hero.badge":"การตลาดอินฟลูเอนเซอร์ เกาหลี × เอเชียตะวันออกเฉียงใต้",
     "hero.title1":"อินฟลูเอนเซอร์คอมเมิร์ซยุโรป·อาเซียน","hero.title2":"บริษัทฟูลสแตก",
@@ -299,7 +299,7 @@ const I18N = {
     "foot.tag":"พาร์ทเนอร์อินฟลูเอนเซอร์คอมเมิร์ซที่เชื่อมเกาหลี เอเชียตะวันออกเฉียงใต้ และยุโรป","foot.menu":"เมนู","foot.contact":"ติดต่อ","foot.partner":"พาร์ทเนอร์สาขาเกาหลี","foot.rights":"สงวนลิขสิทธิ์"
   },
   id:{
-    "nav.home":"Beranda","nav.influencers":"Influencer","nav.services":"Layanan","nav.about":"Tentang","nav.contact":"Kontak",
+    "nav.home":"Beranda","nav.influencers":"Influencer","nav.services":"Layanan","nav.studio":"Produksi","nav.history":"Riwayat Proyek","nav.about":"Tentang","nav.contact":"Kontak",
     "cta.brand":"Kerja Sama Brand","cta.explore":"Lihat Daftar",
     "hero.badge":"Marketing Influencer Korea × Asia Tenggara",
     "hero.title1":"Influencer-Commerce Eropa · Asia Tenggara","hero.title2":"Perusahaan Full-Stack",
@@ -340,7 +340,7 @@ const I18N = {
     "foot.tag":"Partner influencer-commerce yang menghubungkan Korea, Asia Tenggara & Eropa.","foot.menu":"Menu","foot.contact":"Kontak","foot.partner":"Partner Cabang Korea","foot.rights":"Hak cipta dilindungi."
   },
   zh:{
-    "nav.home":"首页","nav.influencers":"网红资源","nav.services":"服务","nav.about":"关于我们","nav.contact":"联系我们",
+    "nav.home":"首页","nav.influencers":"网红资源","nav.services":"服务","nav.studio":"制作","nav.history":"项目历程","nav.about":"关于我们","nav.contact":"联系我们",
     "cta.brand":"品牌合作咨询","cta.explore":"查看资源库",
     "hero.badge":"韩国 × 东南亚 网红营销",
     "hero.title1":"欧洲·东南亚网红电商","hero.title2":"全栈公司",
