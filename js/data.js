@@ -24,6 +24,11 @@ const LABELS = {
 
 /* ---------- Influencer dataset ---------- */
 const INFLUENCERS = [
+  {name:"Hoa Minzy", real:"Nguyễn Thị Hòa · 1995", country:"vietnam", cats:["celebrity","music","genz"],
+   followers:"7.1M", fnote:"TikTok",
+   plat:[{t:"tiktok",u:"https://www.tiktok.com/@hoaminzy"},{t:"instagram",u:"https://www.instagram.com/hoaminzy_rose"},{t:"youtube",u:"https://www.youtube.com/@hoaminzy"}],
+   ko:"베트남 여성 솔로 가수 최상위권. 2025년 ‘Bắc Bling’ MV가 3억 뷰를 돌파하며 그해 베트남에서 가장 많이 검색된 노래 1위에 올랐다. 틱톡 710만·인스타 438만·유튜브 315만, 전통문화와 현대 팝을 결합해 전 세대를 아우르는 국민적 영향력.",
+   en:"One of Vietnam's top female solo artists. Her 2025 hit ‘Bắc Bling’ surpassed 300M views and became Vietnam's most-searched song of the year. 7.1M TikTok · 4.38M Instagram · 3.15M YouTube — fusing tradition with modern pop for nationwide reach."},
   {name:"Call Me Duy", real:"Vũ Duy · 1997", country:"vietnam", cats:["livecommerce","beauty"],
    followers:"1.2M", fnote:"TikTok",
    plat:[{t:"tiktok",u:"https://www.tiktok.com/@justvuduy16"}],
