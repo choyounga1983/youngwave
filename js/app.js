@@ -289,14 +289,51 @@ function renderTeam(){
   }
 }
 
-/* ---------- Project history marquee ---------- */
+/* ---------- Project history: auto-scroll + arrows + click-to-zoom ---------- */
+function histLightbox(src,cap){
+  let lb=document.getElementById("histLightbox");
+  if(!lb){
+    lb=document.createElement("div");lb.id="histLightbox";lb.className="hist-lb";
+    lb.innerHTML=`<button class="hist-lb-close" aria-label="닫기">✕</button><img alt=""><div class="hist-lb-cap"></div>`;
+    document.body.appendChild(lb);
+    lb.addEventListener("click",e=>{if(e.target===lb||e.target.classList.contains("hist-lb-close"))lb.classList.remove("open");});
+    document.addEventListener("keydown",e=>{if(e.key==="Escape")lb.classList.remove("open");});
+  }
+  lb.querySelector("img").src=src;
+  lb.querySelector(".hist-lb-cap").textContent=cap||"";
+  lb.classList.add("open");
+}
 function renderHistory(){
   const box=document.getElementById("histMarquee");
   if(!box||typeof HISTORY==="undefined")return;
-  const card=h=>`<figure class="hist-item"><img src="assets/history/${h.f}" alt="${h.t}" loading="lazy"><figcaption class="hist-cap">${h.t}</figcaption></figure>`;
+  const card=h=>`<figure class="hist-item" data-full="assets/history/${h.f}" data-cap="${(h.t||'').replace(/"/g,'&quot;')}"><img src="assets/history/${h.f}" alt="${h.t}" loading="lazy"><figcaption class="hist-cap">${h.t}</figcaption></figure>`;
   const set=HISTORY.map(card).join("");
-  // one track with the set duplicated → translateX(-50%) = exactly one set width = seamless loop
-  box.innerHTML=`<div class="hist-track">${set}${set}</div>`;
+  box.innerHTML=`<button class="hist-nav hist-prev" aria-label="이전">‹</button>
+    <div class="hist-scroll"><div class="hist-track">${set}${set}</div></div>
+    <button class="hist-nav hist-next" aria-label="다음">›</button>`;
+  const scroll=box.querySelector(".hist-scroll");
+  // 클릭 → 크게 보기
+  box.querySelectorAll(".hist-item").forEach(it=>{
+    it.addEventListener("click",()=>histLightbox(it.dataset.full,it.dataset.cap));
+  });
+  // 화살표 → 빠르게 넘기기
+  const step=()=>Math.max(scroll.clientWidth*0.8,260);
+  box.querySelector(".hist-prev").addEventListener("click",()=>scroll.scrollBy({left:-step(),behavior:"smooth"}));
+  box.querySelector(".hist-next").addEventListener("click",()=>scroll.scrollBy({left:step(),behavior:"smooth"}));
+  // 자동 스크롤 (마우스 올리면 정지)
+  let paused=false;
+  box.addEventListener("mouseenter",()=>paused=true);
+  box.addEventListener("mouseleave",()=>paused=false);
+  const reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+  function tick(){
+    if(!paused&&!reduce){
+      scroll.scrollLeft+=0.5;
+      const half=scroll.scrollWidth/2;
+      if(scroll.scrollLeft>=half)scroll.scrollLeft-=half;
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
 }
 
 /* ---------- Reveal ---------- */
