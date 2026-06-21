@@ -75,8 +75,8 @@ function buildChrome(active){
         <div class="foot-col"><h5 data-i18n="foot.menu"></h5>
           ${links.map(k=>`<a href="${pages[k]}" data-i18n="nav.${k}"></a>`).join("")}</div>
         <div class="foot-col foot-contact"><h5 data-i18n="foot.contact"></h5>
-          <div class="fc"><span class="fc-name">조영아 · Strella Young</span><span class="fc-role">영웨이브 본사 대표</span><a href="mailto:youngwavecreative@gmail.com">youngwavecreative@gmail.com</a></div>
-          <div class="fc"><span class="fc-name">Dương Thị Huyền Trân</span><span class="fc-role">영웨이브 베트남 공동대표</span></div>
+          <div class="fc"><span class="fc-name">조영아 · Stella Young</span><span class="fc-role">영웨이브 본사 대표</span><a href="mailto:youngwavecreative@gmail.com">youngwavecreative@gmail.com</a></div>
+          <div class="fc"><span class="fc-name">Dương Thị Huyền Trân · Bonnie Yang</span><span class="fc-role">영웨이브 베트남 공동대표</span></div>
           <div class="fc"><span class="fc-name">Brooks Kim · 김현우</span><span class="fc-role">한국 지사 · Brooks Global 대표</span><a href="mailto:brooksservices.kim@gmail.com">brooksservices.kim@gmail.com</a></div>
           <div class="fc"><span class="fc-name">Jenny Go · 고은주</span><span class="fc-role">한국 지사 · Brooks Global Sales Director</span><a href="mailto:jinniko7490@naver.com">jinniko7490@naver.com</a></div>
           <a class="fc-addr">HCMC · Vincom Center, District 1 &nbsp;/&nbsp; Incheon · Brooks Global (Korea)</a></div>
